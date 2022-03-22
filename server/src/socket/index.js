@@ -7,6 +7,7 @@ const socketIo = (io) => {
     console.log('Client connect : ', userCount);
 
     socket.on('disconnect', () => {
+      userCount--
       console.log('client disconnect');
     })
   })
